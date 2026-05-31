@@ -1,0 +1,353 @@
+/* App.css - Versión Final Corregida */
+
+.portfolio-container {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #000000; 
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #646cff;
+}
+
+.logo-small {
+  height: 60px;
+  width: 60px;
+  border-radius: 30%;
+  object-fit: cover; /* Mantiene el logo perfecto */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #646cffaa;
+}
+
+/* HERO */
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 5%;
+  min-height: 60vh;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover; /* Evita que tu foto de carnet se distorsione */
+  border-radius: 20px;
+  filter: drop-shadow(0 0 20px #646cffaa);
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #646cff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+/* SOBRE MÍ */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 80px 5%;
+  min-height: 100vh;
+}
+
+.about-main-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-main-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-item {
+  margin-bottom: 2.5rem;
+}
+
+.about-item h3 {
+  margin: 0 0 -0.25rem 0;
+}
+
+.about-item:last-child {
+  margin-bottom: 0;
+}
+
+.skills-sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: #111111;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #646cff;
+}
+
+.skills-group {
+  margin-bottom: 1.5rem;
+}
+
+.skills-group:last-child {
+  margin-bottom: 0;
+}
+
+.skills-group h4 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1rem;
+  color: #646cff;
+  padding-left: 2rem;
+}
+
+.skills-group ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.skills-group li {
+  padding: 0.25rem 0 0.25rem 0.8rem;
+  margin-bottom: 0.1rem;
+  font-size: 0.95rem;
+  border-left: 2px solid #333;
+}
+
+/* PROYECTOS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 50px 5%;
+}
+
+.proyecto-card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.proyecto-card p {
+  padding: 0 20px;       /* Añade margen a los lados para que el texto no toque los bordes */
+  line-height: 1.6;      /* Mejora la legibilidad separando un poco las líneas */
+  white-space: pre-line; 
+  text-align: justify;     
+}
+.proyecto-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Mantiene las fotos de tus proyectos alineadas */
+}
+
+.proyecto-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.btn-link {
+    font-size: 0.8rem; /* Tamaño más pequeño */
+    color: #646cff;    /* El color lila que estás usando */
+    text-decoration: none;
+    border: 1px solid #646cff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    background-color: #646cff;
+    color: white;
+}
+
+/* --- SECCIÓN DE CONTACTO: ESTRUCTURA GRID --- */
+.contact-section {
+  padding: 80px 5%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-layout {
+  display: grid;
+  /* Crea 2 columnas iguales. En móvil (menos de 768px) se pone una sobre otra */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  margin-top: 40px;
+  align-items: start; /* Alinea ambas columnas al "techo" */
+}
+
+/* FORMULARIO */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #646cff;
+}
+
+.form-group input, 
+.form-group textarea {
+  background-color: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-family: inherit;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+/* INFO Y REDES */
+.contact-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info h3 {
+  margin: 0;
+  color: #646cff;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-item {
+  background-color: #1a1a1a;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.social-item:hover {
+  border-color: #646cff;
+  background-color: #222;
+}
+
+.btn-cv {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  color: #646cff;
+  border: 2px solid #646cff;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-cv:hover {
+  background-color: #646cff;
+  color: white;
+}
+
+/* SCROLL TO TOP */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #646cff;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1);
+  background-color: #535bf2;
+}
+
+.scroll-to-top::after {
+  content: "↑";
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
