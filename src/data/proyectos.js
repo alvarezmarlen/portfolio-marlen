@@ -39,6 +39,6 @@ export const misProyectos = [
         • Arquitectura limpia utilizando HTML5, CSS3 y JavaScript Vanilla. 🏗️`,
         imagen: imgMoney,
         repo: "https://github.com/alvarezmarlen/MoneyLink", 
-        demo: "https://alvarezmarlen.github.io/MoneyLink/"
+        demo: "https://moneylin.netlify.app/"
     }
 ];
