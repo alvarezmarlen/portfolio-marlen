@@ -25,7 +25,7 @@ export const misProyectos = [
         • Diseño 100% responsive aplicando CSS Grid y Flexbox. 📱`,
         imagen: imgRetro,
         repo: "https://github.com/alvarezmarlen/Tiend_Vintage_Retrodenda", 
-        demo: "https://alvarezmarlen.github.io/Tiend_Vintage_Retrodenda/"
+        demo: "https://retrodenda.netlify.app/"
     },
         {
         id: 3,
