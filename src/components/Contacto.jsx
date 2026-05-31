@@ -12,15 +12,15 @@ function Contacto() {
         <form className="contact-form" action="https://formspree.io/f/mnjryldy" method="POST">
           <div className="form-group">
             <label htmlFor="nombre">Nombre</label>
-            <input id="nombre" type="text" placeholder="Tu nombre..." required />
+            <input id="nombre" name="name" type="text" placeholder="Tu nombre..." required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input id="email" type="email" placeholder="tu@email.com" required />
+            <input id="email" name="email" type="email" placeholder="tu@email.com" required />
           </div>
           <div className="form-group">
             <label htmlFor="mensaje">Mensaje</label>
-            <textarea id="mensaje" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+            <textarea id="mensaje" name="message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
           </div>
           <button type="submit" className="btn-primary">Enviar Mensaje</button>
         </form>
